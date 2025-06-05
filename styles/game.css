@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -52,7 +52,7 @@ table {
 *****************************************/
 
 body{
-	background-color:rgb(165,125,65);	
+	background-color:rgb(165,125,65);
 }
 
 .wrapper{
@@ -74,12 +74,12 @@ header{
 
 header p{
 	margin-top:10px;
-	font-size:20px;	
+	font-size:20px;
 }
 
 h1{
 	font-size:76px;
-	font-family: "Permanent Marker", Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;	
+	font-family: "Permanent Marker", Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
 }
 
 main{
@@ -106,21 +106,21 @@ main{
 
 	width:7.5vw;
 	height:11.86vw;
-	
+
 	font-size:13vw;
-	
+
 	font-weight:bold;
 	color:white;
 	text-align:center;
-	
-	margin:0.9vw;	
+
+	margin:0.9vw;
 	border-radius:10px;
 	box-shadow:2px 2px 4px black;
 }
 
 .cardFlipped{
 	box-shadow:8px 8px 10px black;
-		
+
 	border:0.3vw solid;
 }
 
@@ -135,9 +135,9 @@ main{
 @media screen and (max-width:800px){
 	.wrapper{
 		width:100%;
-		border:none;	
+		border:none;
 	}
-	
+
 	.card, .cardFlipped{
 		/*shift so they fit inside the 100% width*/
 		width:12.45vw;
@@ -166,37 +166,37 @@ main{
 	/* Anything that doesn't support gradients */
 	background-color:black;
 	background: repeating-linear-gradient(45deg, rgb(106,0,1), rgb(106,0,1) 5%, black 6%, black 10%);
-	cursor:pointer; /*on hover, change the cursor*/	
+	cursor:pointer; /*on hover, change the cursor*/
 }
 
 .cardFlipped#red{
 	/* Safari */
-	background: radial-gradient(rgb(255,0,0) 50%, rgb(210,0,0) 90%);	
+	background: radial-gradient(rgb(255,0,0) 50%, rgb(210,0,0) 90%);
 	border-color:rgb(50,0,0);
 }
 
 .cardFlipped#blue{
-	background: radial-gradient(rgb(0,0,255) 50%, rgb(0,0,210) 90%);	
+	background: radial-gradient(rgb(0,0,255) 50%, rgb(0,0,210) 90%);
 	border-color:rgb(0,0,50);
 }
 
 .cardFlipped#green{
-	background: radial-gradient(rgb(0,255,0) 50%, rgb(0,210,0) 90%);	
+	background: radial-gradient(rgb(0,255,0) 50%, rgb(0,210,0) 90%);
 	border-color:rgb(0,50,0);
 }
 
 .cardFlipped#yellow{
-	background: radial-gradient(rgb(255,255,0) 50%, rgb(210,210,0) 90%);	
+	background: radial-gradient(rgb(255,255,0) 50%, rgb(210,210,0) 90%);
 	border-color:rgb(50,50,0);
 }
 
 .cardFlipped#purple{
-	background: radial-gradient(rgb(110,0,146) 50%, rgb(70,0,100) 90%);	
+	background: radial-gradient(rgb(110,0,146) 50%, rgb(70,0,100) 90%);
 	border-color:rgb(25,0,50);
 }
 
 .cardFlipped#orange{
-	background: radial-gradient(rgb(255,128,0) 50%, rgb(210,88,0) 90%);	
+	background: radial-gradient(rgb(255,128,0) 50%, rgb(210,88,0) 90%);
 	border-color:rgb(50,25,0);
 }
 
@@ -205,5 +205,24 @@ main{
 *************************************/
 
 
+#overlay{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:rgba(128,128,128,0.6);
+	top:0;
+	left:0;
+	z-index:100;
+}
 
-
+#overlay p{
+	font-size:36px;
+	width: 100%;
+	padding:2vh 0;
+	background:rgba(255, 31, 31, 0.6);
+	border-top: rgba(131, 17, 17, 0.8);
+	border-bottom: rgba(131, 17, 17, 0.8);
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
